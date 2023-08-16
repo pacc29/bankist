@@ -55,8 +55,8 @@ const allButtons = document.getElementsByTagName('button');
 const message = document.createElement('div');
 message.classList.add('cookie-message');
 // message.textContent = 'We use cookies for improved functionality and analytics';
-// message.innerHTML =
-//   'We use cookies for improved functionality and analytics. <button class="btn btn--close-cookie">Got it!</button>';
+message.innerHTML =
+  'We use cookies for improved functionality and analytics. <button class="btn btn--close-cookie">Got it!</button>';
 
 // header.prepend(message)
 header.append(message);
@@ -304,7 +304,7 @@ const slides = function () {
   dotsContainer.addEventListener('click', showSlide);
 };
 
-slides()
+slides();
 
 // --------------------------------- LECTURES
 // const callbackObs = (entries, observer) => {
